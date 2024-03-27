@@ -18,7 +18,7 @@ importers:
         specifier: ^5.2.2
         version: 5.4.3
 
-  packages/core:
+  packages/lexer-js:
     devDependencies:
       '@napi-rs/cli':
         specifier: ^2.16.3
