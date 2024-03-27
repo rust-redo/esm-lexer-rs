@@ -1,0 +1,17 @@
+{
+  "name": "root",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "pnpm build:crate && pnpm build:npm",
+    "build:crate": "pnpm --filter \"{packages/**}\" run build:crate",
+    "build:npm": "pnpm --filter \"{packages/**}\" run build:npm",
+    "test": "pnpm --filter \"{packages/**}\" run test",
+    "artifacts": "pnpm --filter \"{packages/**}\" run artifacts",
+    "universal": "pnpm --filter \"{packages/**}\" run universal"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "fast-glob": "^3.3.2",
+    "typescript": "^5.2.2"
+  }
+}

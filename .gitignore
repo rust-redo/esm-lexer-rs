@@ -97,12 +97,10 @@ dist
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 
-# vuepress build output
-.vuepress/dist
-
-# vuepress v2.x temp and cache directory
+# tmp files
 .temp
 .cache
+*.swp
 
 # Docusaurus cache and generated files
 .docusaurus
@@ -128,3 +126,16 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# cargo build
+**/target
+**/temp
+**/*.node
+**/__test__/**/*lock.json
+
+# npm build
+packages/*/binding.js
+packages/*/binding.d.ts
+packages/*/index.d.ts
+packages/*/index.js
+
